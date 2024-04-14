@@ -33,7 +33,105 @@
       background-color: rgb(255, 42, 141);
     }
 
-    
+    @media (min-width:768px) and (max-width:992px) {
+      .text-md-center {
+        text-align: center !important; /* Importan! ini saya pakai untuk mengatur layer Medium */ 
+      }
+      .content-3{
+    font-size: 16px;
+  }
+  .text-lg-left {
+    text-align: center;
+  }
+  .content-4 {
+    height: 36rem;
+    margin: auto;
+  }
+  .content-4 a p {
+    font-size: 30px;
+    margin-bottom: 20rem;
+  }
+  .footer-1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .Footer-2 {
+    margin-bottom: 22rem;
+  }
+
+    }
+    /*  */
+
+    @media (min-width:992px) {
+      .text-lg-left {
+        text-align: left !important;/* Importan! ini saya pakai untuk mengatur layer Large */ 
+      }
+      .text-3 {
+    .font-size: 25px;
+  }
+  .content-4-lg {
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+    }
+    .footer-1 {
+    margin-top: 100px;
+  }
+
+    /*  */
+
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+  .content-3{
+    font-size: 16px;
+  }
+  .text-lg-left {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .text-3 {
+    .font-size: 25px;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .content-4 {
+    height: 36rem;
+    margin: auto;
+  }
+  .content-4 a p {
+    font-size: 30px;
+    margin-bottom: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-4-lg {
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+  .footer-1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .Footer-2 {
+    margin-bottom: 22rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-1 {
+    margin-top: 100px;
+  }
+} */
+
 
 
 
@@ -52,11 +150,13 @@
           />
           Bootstrap
         </a>
-
-        <div class="collapse navbar-collapse" id="navbarScroll">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px; font-size: 23px"
+            class="navbar-nav mx-auto my-2 my-lg-0 mb-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px; font-size: 23p"
           >
             <li class="nav-item">
               <a class="nav-link active fw-bold" style="color: orchid;" aria-current="page" href="#">Home</a>
@@ -83,17 +183,17 @@
     <!-- content 1 -->
     <div class="container" style="padding-top: 100px">
       <div class="row d-flex">
-        <div class="col-6">
-          <h2 style="font-size: 70px">
+        <div class="col-lg-6 col-md-12 order-md-2 order-lg-1">
+          <h2 style="font-size: 70px" class="text-md-center text-lg-left">
             Travel<span class="text-danger"> top destination </span>of the world
           </h2>
-          <a href="#" class="text-decoration-none fs-4" style="margin: 30px 0 60px; display: block"
+          <a href="#" class="text-decoration-none fs-4 text-md-center text-lg-left" style="margin: 30px 0 60px; display: block"
             ><img src="./Assets/Logo-tas.png" class="me-4" alt="" />Explore the world!</a
           >
-          <p style="font-size: 23px">
+          <p style="font-size: 23px" class="text-md-center text-lg-left">
             We always make our customer happy by providing as many choices as possible
           </p>
-          <div class="button d-flex" style="margin-top: 50px">
+          <div class="button d-flex  d-md-block text-md-center text-lg-left" style="margin-top: 50px">
             <span class="py-3 px-4 demo" style="font-size: 23px; border-radius: 20px"
               ><a href="#" class="text-decoration-none">Get Started</a></span
             >
@@ -106,53 +206,43 @@
             >
           </div>
         </div>
-        <div class="col-5 offset-1">
-          <img src="./Assets/Frame 15.png" class="img-fluid" alt="" />
+        <div class="col-lg-5 offset-lg-1 col-md-12 order-md-1 order-lg-2">
+          <img src="./Assets/Frame 15.png" class="img-fluid mx-auto d-md-block" alt="" />
         </div>
       </div>
     </div>
 
     <!-- content 2  -->
     <div class="container">
-      <div class="row" style="margin-top: 60px">
-        <div class="col-2 offset-1">
+      <div class="row mb-5 pb-5" style="margin-top: 60px">
+        <div class="col-lg-2 col-md-3 py-3 mx-md-auto offset-lg-1">
           <img src="./Assets/Group 2.svg" class="img-fluid" alt="" />
         </div>
-        <div class="col-2 mx-3">
+        <div class="col-lg-2 col-md-3 py-3 mx-md-auto  mx-lg-3">
           <img src="./Assets/Group 3.svg" class="img-fluid" alt="" />
         </div>
-        <div class="col-2 mx-3">
+        <div class="col-lg-2 col-md-3 py-3 mx-md-auto  mx-lg-3">
           <img src="./Assets/Group 9235.svg" class="img-fluid" alt="" />
         </div>
-        <div class="col-2 mx-3">
+        <div class="col-lg-2 col-md-3 py-3 mx-md-auto mx-lg-3">
           <img src="./Assets/Group-1.svg" class="img-fluid" alt="" />
         </div>
-        <div class="col-2 mx-3">
+        <div class="col-lg-2 col-md-3 py-3 mx-md-auto mx-lg-3">
           <img src="./Assets/Group.svg" class="img-fluid" alt="" />
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col-12">
-          <h2 class="text-danger fw-bold text-center" style="font-size: 30px; margin-top: 70px">
-            Service
-          </h2>
-          <div class="col-12">
-            <h2 class="text-center fw-bold" style="margin-top: 40px; font-size: 28px">
-              Our top value categories for you
-            </h2>
-          </div>
-        </div>
-      </div>
     </div>
+
+
     <!-- content 3 -->
     <div class="container">
-      <div class="row d-flex py-5">
-        <div class="col-3">
-          <h2 class="text-danger fw-bold align-items-center">Service</h2>
-          <h1>Our top value categories for you</h1>
+      <div class="row  d-flex py-5">
+        <div class="col-lg-3 col-md-12 ">
+          <h2 class="text-danger fw-bold align-items-center text-md-center text-lg-left">Service</h2>
+          <h1 class="text-md-center text-lg-left">Our top value categories for you</h1>
         </div>
-        <div class="col-3">
-          <div class="card shadow" style="width: 20rem">
+        <div class="col-lg-3 col-md-4 ">
+          <div class="card content-3 shadow" >
             <img
               src="./Assets/cloudy 1.png"
               class="card-img-top mx-auto my-4"
@@ -160,7 +250,7 @@
               alt="..."
             />
             <div class="card-body py-4 text-center">
-              <h4 class="py-3">Best Tour Guide</h4>
+              <h4 class="py-3 text-on">Best Tour Guide</h4>
               <p class="card-text py-4">
                 Some quick example text to build on the card title and make up the bulk of the
                 card's content.
@@ -168,8 +258,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card shadow" style="width: 20rem">
+        <div class="col-lg-3 col-md-4 ">
+          <div class="card content-3 shadow" >
             <img
               src="./Assets/booking 1.png"
               class="card-img-top mx-auto my-4"
@@ -177,7 +267,7 @@
               alt="..."
             />
             <div class="card-body py-4 text-center">
-              <h4 class="py-3">Easy Booking</h4>
+              <h4 class="py-3 text-on">Easy Booking</h4>
               <p class="card-text py-4">
                 Some quick example text to build on the card title and make up the bulk of the
                 card's content.
@@ -185,8 +275,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card shadow" style="width: 20rem">
+        <div class="col-lg-3 col-md-4 ">
+          <div class="card content-3 shadow" >
             <img
               src="./Assets/destination 1.png"
               class="card-img-top mx-auto my-4"
@@ -194,7 +284,7 @@
               alt="..."
             />
             <div class="card-body py-4 text-center">
-              <h4 class="py-3">Weather Forecast</h4>
+              <h4 class="py-3 text-on">Weather Forecast</h4>
               <p class="card-text py-4">
                 Some quick example text to build on the card title and make up the bulk of the
                 card's content.
@@ -213,16 +303,16 @@
            TOP DESTINATION
           </h2>
           <div class="col-12">
-            <h2 class=" fw-bold" style="margin-top: 20px; font-size: 32px;margin-bottom: 100px;">
+            <h2 class=" fw-bold" style="margin-top: 20px; font-size: 32px;">
              Explore Top Dstination
             </h2>
             <div class="row  py-4 ">
-              <div class="col-4">
-                <div class="card offset-1" style="width: 30rem;">
+              <div class="col-lg-4 col-md-4">
+                <div class="card  offset-lg-1 content-4 content-4-lg rounded-5">
                   <img src="./Assets/Rectangle 6.png" class="card-img-top" alt="...">
                   <div class="value pt-5 px-4 d-flex justify-content-between">
-                    <a href="#" class="card-link text-decoration-none fw-bold" style="font-size: 25px;">Paradise Beach, Bantayan Island</a>
-                    <a href="#" class="card-link text-decoration-none text-danger fw-bold" style="font-size: 20px;">$550.16</a>
+                    <a href="#" class="card-link text-decoration-none fw-bold">Paradise Beach, Bantayan Island</a>
+                    <a href="#" class="card-link text-decoration-none text-danger fw-bold">$550.16</a>
                   </div>
                   <p href="#" class="card-link d-block pt-2 px-4">Rome, Italy</p>
                   <div class="card-body justify-content-between">
@@ -231,12 +321,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card" style="width: 30rem;">
+              <div class="col-lg-4 col-md-4">
+                <div class="card content-4 content-4-lg rounded-5">
                   <img src="./Assets/Rectangle 6 (2).png" class="card-img-top" alt="...">
                   <div class="pt-5 d-flex px-4">
-                    <a href="#" class="card-link text-decoration-none fw-bold" style="font-size: 25px;">Mountain View, Above the cloud</a>
-                    <a href="#" class="card-link text-decoration-none text-danger fw-bold" style="font-size: 20px;">$90.96</a>
+                    <a href="#" class="card-link text-decoration-none fw-bold">Mountain View, Above the cloud</a>
+                    <a href="#" class="card-link text-decoration-none text-danger fw-bold">$90.96</a>
                   </div>
                   <p class="px-4 pt-2 ">Uni Emirate Arab</p>
                   <div class="card-body">
@@ -245,12 +335,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card" style="width: 30rem;">
+              <div class="col-lg-4 col-md-4">
+                <div class="card  content-4 content-4-lg rounded-5">
                   <img src="./Assets/Rectangle 6 (1).png" class="card-img-top" alt="...">
                   <div class="pt-5 d-flex px-4">
-                    <a href="#" class="card-link text-decoration-none fw-bold" style="font-size: 25px;">Ocean with full of Colors </a>
-                    <a href="#" class="card-link text-decoration-none text-danger fw-bold" style="font-size: 20px;">$200.96</a>
+                    <a href="#" class="card-link text-decoration-none fw-bold">Ocean with full of Colors </a>
+                    <a href="#" class="card-link text-decoration-none text-danger fw-bold">$200.96</a>
                   </div>
                   <p class="px-4 pt-2 ">Maldive</p>
                   <div class="card-body">
@@ -264,12 +354,12 @@
       </div>
     </div>
     <!-- Hero Section 2 -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row d-flex">
-        <div class="col-8">
-          <img src="./Assets/Hero-section2.png" style="width: ;" alt="">
+        <div class="col-lg-8 col-md-12">
+          <img src="./Assets/Hero-section2.png" class="img-fluid"  alt="">
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-12">
           <div class="text-justify" style="padding-top: 100px;">
           <h1 class="text-danger" style="font-size:24px;">Travel Point</h1>
           <h4 class="fw-bold py-5" style="font-size: 36px;">We helping you find your dream location</h4>
@@ -304,9 +394,9 @@
       </div>
     </div>
     <!-- Hero Section 3 -->
-    <div class="container-fluid py-5 my-5">
+    <div class="container py-5 my-5">
       <div class="row">
-        <div class="col-6" style="padding-top: 100px">
+        <div class="col-lg-6 col-md-12 order-md-1" style="padding-top: 100px">
           <h2 class="text-danger fw-bold" style="font-size: 40px;">Key features</h2>
           <h4 class="py-3 fw-bold" style="font-size: 50px;">We offer best services</h4>
           <p style="font-size: 16px;">Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -347,7 +437,7 @@
             </div>
             <!-- end section logo -->
         </div>
-        <div class="col-5 offset-1 ">
+        <div class="col-lg-5  col-md-12 offset-lg-1 order-md-2">
           <img src="./Assets/hero-section3.png" class="img-fluid" alt="">
         </div>
       </div>
@@ -396,6 +486,79 @@
             </button>
           </div>
           
+        </div>
+      </div>
+    </div>
+
+    <!-- content 6 -->
+    
+    <div class="container"><hr class="border-5 border-danger">
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-10">
+          <h4 class="text-danger fs-1">subscribe to our newsletter</h4>
+          <h1 class=" fw-bold pt-5" style="font-size: 50px;">Prepare yourself & let’s explore the beauty of the world</h1>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5">
+        <div class="col-10 justify-content-between d-flex">
+          <a href="#" class="text-decoration-none fs-1 fw-bold"><img src="./Assets/logo-message 1.png" class=" align-items-center mx-4" alt="">Search</a>
+          <button class="btn bg-primary px-5 py-3 fw-bold rounded-pill" style="font-size: 30px;" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container"><hr class="border-5 border-primary mt-5">
+      <div class="row py-5 mt-5">
+        <div class="col-lg-6 col-md-12">
+          <a href="#" class="fw-bold fs-1 text-decoration-none"><img src="./Assets/logo-sampul.png" class="mx-3" alt="">Travlog</a>
+          <p class=" fs-2" style="margin-top: 80px;">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+          It has roots in a piece of classical Latin literature from 45 BC.</p>
+          <span class=" d-block footer-1" ><img src="./Assets/Logo-Medsos.png" alt=""></span>
+        </div>
+        <div class="col-lg-6 d-flex Footer-2 justify-content-between">
+          <!-- Dropdown 1 -->
+          <ul class="fs-3" style="list-style-type: none;">
+          <li class=" dropdown text-decoration-none">
+            <a class=" fw-bold text-decoration-none text-dark" stref="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu bg-transparent" style="border: none;" >
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">About</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">Career</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">Mobile</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Dropdown 2 -->
+        <ul class="fs-3" style="list-style-type: none;">
+          <li class=" dropdown">
+            <a class=" fw-bold text-decoration-none text-dark"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact us
+            </a>
+            <ul class="dropdown-menu bg-transparent" style="border: none;" >
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">Why Travlog ?</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">Partner with us</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">FAQ's</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Dropdown 3 -->
+        <ul class="fs-3" style="list-style-type: none;">
+          <li class=" dropdown text-decoration-none">
+            <a class=" fw-bold text-decoration-none text-dark"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Meet the Team
+            </a>
+            <ul class="dropdown-menu bg-transparent" style="border: none;" >
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">+6739394848483</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">info@Trvlog.com</a></li>
+              <li class="py-4"><a class="dropdown-item fs-3 text-wrap" href="#">208. R.Han Src.stx, new zealand </a></li>
+              <li class="py-4"><a class="dropdown-item fs-3" href="#">BDF815 608. TRE</a></li>
+            </ul>
+          </li>
+        </ul>
+          <!--  -->
         </div>
       </div>
     </div>
