@@ -12,7 +12,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #fef8f8;
+  background-color: #f8f8f8;
   text-decoration: underline;
 }
 
@@ -32,6 +32,7 @@ body {
   .content-3 {
     font-size: 16px;
   }
+
   .text-lg-left {
     text-align: center;
   }
@@ -70,6 +71,3 @@ body {
 }
 
 /*  */
-
-* {
-}

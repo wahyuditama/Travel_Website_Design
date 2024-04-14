@@ -10,145 +10,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <style>
-    .nav-link {
-      padding: 6px;
-      transition: color 0.5s ease;
-      border-radius: 10px;
-    }
+  
 
-    .nav-link:hover {
-      background-color: #fef8f8;
-      text-decoration: underline;
-    }
-
-    .demo {
-      transition: color 0.5s ease;
-      font-weight: bold;
-    }
-
-    .demo:hover {
-      background-color: rgb(255, 42, 141);
-    }
-
-    @media (min-width:768px) and (max-width:992px) {
-      .text-md-center {
-        text-align: center !important; /* Importan! ini saya pakai untuk mengatur layer Medium */ 
-      }
-      .content-3{
-    font-size: 16px;
-  }
-  .text-lg-left {
-    text-align: center;
-  }
-  .content-4 {
-    height: 36rem;
-    margin: auto;
-  }
-  .content-4 a p {
-    font-size: 30px;
-    margin-bottom: 20rem;
-  }
-  .footer-1 {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-  .Footer-2 {
-    margin-bottom: 22rem;
-  }
-
-    }
-    /*  */
-
-    @media (min-width:992px) {
-      .text-lg-left {
-        text-align: left !important;/* Importan! ini saya pakai untuk mengatur layer Large */ 
-      }
-      .text-3 {
-    .font-size: 25px;
-  }
-  .content-4-lg {
-    height: 50rem;
-    margin-bottom: 10rem;
-  }
-    }
-    .footer-1 {
-    margin-top: 100px;
-  }
-
-    /*  */
-
-
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-  .content-3{
-    font-size: 16px;
-  }
-  .text-lg-left {
-    text-align: center;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .text-3 {
-    .font-size: 25px;
-  }
-}
-
-@media (min-width:768px) and (max-width:992px) {
-  .content-4 {
-    height: 36rem;
-    margin: auto;
-  }
-  .content-4 a p {
-    font-size: 30px;
-    margin-bottom: 20rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .content-4-lg {
-    height: 50rem;
-    margin-bottom: 10rem;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width:992px) {
-  .footer-1 {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-  .Footer-2 {
-    margin-bottom: 22rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer-1 {
-    margin-top: 100px;
-  }
-} */
-
-
-
-
-  </style>
-
-  <body class="p-0 m-0" style="background-image: url(./Assets/wallpapers.jpg);background-repeat: repeat;">
+  <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container py-4">
-        <a class="navbar-brand" style="font-size: 30px" href="#">
+        <a class="navbar-brand fw-bold" style="font-size: 30px" href="#">
           <img
             src="./Assets/Logo Icon.png"
             alt=""
-            width="30"
-            height="24"
+            width="36"
+            height="36"
             class="d-inline-block align-text-center me-4"
           />
-          Bootstrap
+          TRAVLOG
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -159,23 +37,23 @@
             style="--bs-scroll-height: 100px; font-size: 23p"
           >
             <li class="nav-item">
-              <a class="nav-link active fw-bold" style="color: orchid;" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fw-bold fs-3" style="color: rgb(44, 40, 44);" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" style="color: orchid;" aria-current="page" href="#">About</a>
+              <a class="nav-link active fw-bold fs-3" style="color: rgb(44, 40, 44);" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" style="color: orchid;" aria-current="page" href="#">Contact</a>
+              <a class="nav-link active fw-bold fs-3" style="color: rgb(44, 40, 44);" aria-current="page" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" style="color: orchid;" aria-current="page" href="#"><address></address></a>
+              <a class="nav-link active fw-bold fs-3" style="color: rgb(44, 40, 44);" aria-current="page" href="#"><address></address></a>
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline-success" style="margin-right: 8px" type="submit">
+            <button class="btn btn-outline-success fs-4 fw-bold" style="margin-right: 8px" type="submit">
               Login
             </button>
-            <button class="btn btn-outline-success" type="submit">Register</button>
+            <button class="btn btn-outline-success fs-4 fw-bold" type="submit">Register</button>
           </form>
         </div>
       </div>
@@ -237,9 +115,9 @@
     <!-- content 3 -->
     <div class="container">
       <div class="row  d-flex py-5">
-        <div class="col-lg-3 col-md-12 ">
+        <div class="col-lg-3 col-md-12">
           <h2 class="text-danger fw-bold align-items-center text-md-center text-lg-left">Service</h2>
-          <h1 class="text-md-center text-lg-left">Our top value categories for you</h1>
+          <h1 class="text-md-center text-lg-left mb-5">Our top value categories for you</h1>
         </div>
         <div class="col-lg-3 col-md-4 ">
           <div class="card content-3 shadow" >
@@ -494,13 +372,13 @@
     
     <div class="container"><hr class="border-5 border-danger">
       <div class="row pt-5 mt-5 text-center">
-        <div class="col-10">
+        <div class="col-lg-12 col-md-12">
           <h4 class="text-danger fs-1">subscribe to our newsletter</h4>
           <h1 class=" fw-bold pt-5" style="font-size: 50px;">Prepare yourself & let’s explore the beauty of the world</h1>
         </div>
       </div>
       <div class="row pt-5 mt-5">
-        <div class="col-10 justify-content-between d-flex">
+        <div class="col-lg-12 col-md-12 justify-content-between d-flex">
           <a href="#" class="text-decoration-none fs-1 fw-bold"><img src="./Assets/logo-message 1.png" class=" align-items-center mx-4" alt="">Search</a>
           <button class="btn bg-primary px-5 py-3 fw-bold rounded-pill" style="font-size: 30px;" type="submit">Search</button>
         </div>
