@@ -1,34 +1,160 @@
-* {
-  padding: 0;
+body {
   margin: 0;
+  padding: 0;
+  background: url(./Assets/wallpapers.jpg);
+  background-repeat: repeat;
 }
 
-/* Medium */
+.nav-link {
+  padding: 6px;
+  transition: color 0.5s ease;
+  border-radius: 10px;
+}
 
-@media (min-width: 700px) and (max-width: 992px) {
-  .mb-lg-0 {
-    justify-content: left !important;
+.nav-link:hover {
+  background-color: #f8f8f8;
+  text-decoration: underline;
+}
+
+.demo {
+  transition: color 0.5s ease;
+  font-weight: bold;
+}
+
+.demo:hover {
+  background-color: rgb(255, 42, 141);
+}
+
+/*  */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .text-md-center {
+    text-align: center !important; /* Importan! ini saya pakai untuk mengatur layer Medium */
   }
-  .nav-item {
-    margin-bottom: 20px;
-    font-size: 18px;
+  .content-3 {
+    font-size: 16px;
   }
 
-  .content-1:nth-child(1) {
-    order: 2;
+  .Hero-section2 {
+    margin-top: 300px;
   }
-  .content-1:nth-child(2) {
-    order: 1;
-  }
-  .content-1 {
-    align-items: center;
+
+  .text-lg-left {
     text-align: center;
   }
   .content-4 {
-    align-items: center;
+    height: 36rem;
+    margin: auto;
+  }
+  .content-4 a p {
+    font-size: 30px;
+    margin-bottom: 20rem;
+  }
+  .footer-1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .Footer-2 {
+    margin-bottom: 22rem;
+  }
+}
+/*  */
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important; /* Importan! ini saya pakai untuk mengatur layer Large */
+  }
+  .text-3 {
+    .font-size: 25px;
+  }
+  .content-4-lg {
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+}
+.footer-1 {
+  margin-top: 100px;
+}
+
+/*  */
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .order-sm:nth-child(1) {
+    order: 2;
+  }
+
+  .order-sm:nth-child(2) {
+    order: 1;
+  }
+  .order-sm {
     text-align: center;
   }
-  .content-4 h1 {
+  .button-1 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .button-1 span {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .content-sm-3 {
+    margin-bottom: 20px;
+  }
+
+  .text-lg-left {
+    text-align: center !important;
+  }
+
+  .Hero-section2 {
+    margin-top: 50px;
+  }
+
+  .Hero-section3 h2 {
+    text-align: center !important;
+  }
+  .Hero-section3 h4 {
+    text-align: center !important;
+  }
+  .Hero-section3 p {
+    text-align: justify !important;
+  }
+
+  .content-4 {
+    margin-bottom: 30px;
+  }
+
+  .content-4 h2 {
     text-align: center;
+  }
+
+  .content-5 {
+    text-align: center;
+  }
+
+  .content-6 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .content-6 a,
+  .content-6 button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Footer-2 {
+    display: block !important;
+    margin: 30px 0 80px 0;
+  }
+
+  .content-2 .col-lg-2 {
+    margin: auto;
+    width: 30% !important;
+    float: right !important;
+    clear: none !important;
   }
 }
